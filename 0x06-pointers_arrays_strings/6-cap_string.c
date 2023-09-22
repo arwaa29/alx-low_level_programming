@@ -38,7 +38,7 @@ int isDelimiter(char c)
 char *cap_string(char *s)
 {
 	char *ptr = s;
-	int founddelimit = 1;
+	int foundDelimit = 1;
 
 	while (*s)
 	{
