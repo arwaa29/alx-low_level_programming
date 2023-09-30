@@ -19,17 +19,19 @@ void times_table(void)
 
 		for (y = 1 ; y <= 9 ; y++)
 		{
-			_putchar(',');
-			_putchar(' ');
 
 			product = x * y;
 			if (product <= 9)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(product + 48);
 			}
 			else
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar((product / 10) + 48);
 				_putchar((product % 10) + 48);
 			}
