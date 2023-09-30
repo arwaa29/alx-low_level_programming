@@ -22,16 +22,16 @@ void times_table(void)
 			product = x * y;
 			if (product <= 9)
 			{
-				_putchar(",");
-				_putchar(" ");
-				_putchar(" ");
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(product + 48);
 			}
 			else
 			{
-				_putchar(",");
-				_putchar(" ");
-				_putchar(product / 10) + 48);
+				_putchar(',');
+				_putchar(' ');
+				_putchar((product / 10) + 48);
 				_putchar((product % 10) + 48);
 			}
 		}
