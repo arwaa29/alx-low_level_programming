@@ -17,7 +17,7 @@ void times_table(void)
 	{
 		putchar(48);
 
-		for (y = 0 ; y <= 9 ; y++)
+		for (y = 1 ; y <= 9 ; y++)
 		{
 			product = x * y;
 			if (product <= 9)
