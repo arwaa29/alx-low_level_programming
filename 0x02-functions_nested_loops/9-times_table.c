@@ -15,27 +15,27 @@ void times_table(void)
 
 	for (x = 0 ; x <= 9 ; x++)
 	{
-		putchar(48);
+		_putchar(48);
 
 		for (y = 1 ; y <= 9 ; y++)
 		{
 			product = x * y;
 			if (product <= 9)
 			{
-				putchar(',');
-				putchar(' ');
-				putchar(' ');
-				putchar(product + 48);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(product + 48);
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
-				putchar((product / 10) + 48);
-				putchar((product % 10) + 48);
+				_putchar(',');
+				_putchar(' ');
+				_putchar((product / 10) + 48);
+				_putchar((product % 10) + 48);
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
