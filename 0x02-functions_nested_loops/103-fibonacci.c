@@ -23,7 +23,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("%ld\n", total_sum);
+	printf("%lf\n", total_sum);
 
 	return (0);
 }
