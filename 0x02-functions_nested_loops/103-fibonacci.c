@@ -11,7 +11,7 @@
 int main(void)
 {
 	unsigned long int fib1 = 0, fib2 = 1, sum;
-	double total_sum = 0;
+	unsigned long int total_sum = 0;
 
 	while (1)
 	{
@@ -23,7 +23,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("%f\n", total_sum);
+	printf("%lu\n", total_sum);
 
 	return (0);
 }
