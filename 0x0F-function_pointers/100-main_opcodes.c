@@ -5,7 +5,7 @@
 /**
  * main - check the code for the school students.
  *
- * @argc: the number of args
+ * @argc:t is the number of args
  * @argv: argument vector
  *
  * Return: always 0
