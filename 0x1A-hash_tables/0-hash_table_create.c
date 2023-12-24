@@ -5,7 +5,7 @@
  * @size: size of array
  * Retuen: pointer to the newly created hash table
 */
-hash_table_t *has_table_create(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
         hash_table_t *hash_table;
         unsigned long int i;
