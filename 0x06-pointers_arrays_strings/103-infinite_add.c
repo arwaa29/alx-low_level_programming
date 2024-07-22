@@ -14,10 +14,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
     /*local variable declaration*/
 	int i = 0, j = 0;
 	int large, firstDigit, secondDigit, carryout = 0;
-	while (n1[i] != NULL)
+	while (n1[i] != '\0')
 		i++;
 
-	while (n2[j] != NULL)
+	while (n2[j] != '\0')
 		j++;
 
 	if (i > j)
