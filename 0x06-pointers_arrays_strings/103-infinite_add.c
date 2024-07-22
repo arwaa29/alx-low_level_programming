@@ -12,7 +12,7 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
     /*local variable declaration*/
-	int i = 0, j = 0;
+	int i = 0, j = 0, k;
 	int large, firstDigit, secondDigit, carryout = 0;
 	while (n1[i] != '\0')
 		i++;
@@ -29,7 +29,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (0);
 
 	r[large] = '\0';
-	for (int k = large - 1 ; k >= 0 ; k--)
+	for ( k = large - 1 ; k >= 0 ; k--)
 	{
 		i--;
 		j--;
