@@ -56,7 +56,7 @@ void handle_carry(char *r, int *large, int size_r, int carryout)
 {
 	r[*large + 1] = '\0';
 	if (*large + 2 > size_r)
-		return;
+		return (0);
 	shift_result_right(r, *large);
 	r[0] = carryout + '0';
 }
