@@ -106,7 +106,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	/* Handle any remaining carry*/
 	if (carryout == 1)
-		if (!handle_carry(r, large, size_r, carryout))
-			return (0);
+		handle_carry(r, &large, size_r, carryout);
 	return (r);
 }
