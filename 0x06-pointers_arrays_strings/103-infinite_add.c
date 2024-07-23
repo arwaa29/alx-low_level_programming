@@ -56,9 +56,10 @@ void handle_carry(char *r, int *large, int size_r, int carryout)
 {
 	r[*large + 1] = '\0';
 	if (*large + 2 > size_r)
-		return;
+		return (0);
 	shift_result_right(r, *large);
 	r[0] = carryout + '0';
+	return (1);
 }
 
 /**
@@ -78,7 +79,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	/* Calculate the lengths of the input strings*/
 	large = calculate_lengths(n1, n2, &i, &j);
 	/* Check if the buffer can accommodate the result*/
-	if (large + 1 > size_r)
+	if (large + 1 >= size_r)
 		return (0);
 
 	r[large] = '\0';
@@ -106,6 +107,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	/* Handle any remaining carry*/
 	if (carryout == 1)
-		handle_carry(r, &large, size_r, carryout);
+	{
+		if (!handle_carry(r, large, size_r, carryout))
+			return (0);
+	}
+
 	return (r);
 }
