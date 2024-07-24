@@ -50,6 +50,7 @@ void shift_result_right(char *r, int large)
  * @large: Pointer to the larger length of the two strings
  * @size_r: Size of the buffer
  * @carryout: The carry out value
+ * Return : 0 if size of buffer not suitable and 1 if function is done
  */
 
 char handle_carry(char *r, int *large, int size_r, int carryout)
