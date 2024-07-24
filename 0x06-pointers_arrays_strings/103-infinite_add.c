@@ -52,13 +52,14 @@ void shift_result_right(char *r, int large)
  * @carryout: The carry out value
  */
 
-char *handle_carry(char *r, int *large, int size_r, int carryout)
+char handle_carry(char *r, int *large, int size_r, int carryout)
 {
 	r[*large + 1] = '\0';
 	if (*large + 2 > size_r)
 		return (0);
 	shift_result_right(r, *large);
 	r[0] = carryout + '0';
+	return (1);
 }
 
 /**
